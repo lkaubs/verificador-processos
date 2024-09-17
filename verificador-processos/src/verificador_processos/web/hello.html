@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incluir Processo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        window.onresize = function() {
+        window.resizeTo(420, 500);
+    };
+    </script>
+    <div class="container">
+        <h1>Incluindo Novo Processo</h1>
+        <form>
+            <label for="numero">Número do Processo</label>
+            <input type="text" id="numero" placeholder="Insira o Número do Processo">
+
+            <label for="link">Link do Processo</label>
+            <input type="text" id="link" placeholder="Insira o Link de Consulta">
+
+            <label for="tribunal">Tribunal</label>
+            <select id="tribunal">
+                <option disabled selected>Escolha o tribunal</option>
+                <option>STJ</option>
+                <option>STF</option>
+            </select>
+            
+            <div class="verificacao-container">
+                <label for="verificacao">Verificação Diária</label>
+                <input type="checkbox" id="verificacao">
+            </div>
+
+            <button type="submit">Incluir Processo</button>
+        </form>
+    </div>
+</body>
+</html>

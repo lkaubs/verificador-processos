@@ -1,13 +1,16 @@
 [tool.poetry]
 name = "verificador-processos"
 version = "1.0"
-description = "Cadastra e verifica os procesos"
+description = "Automação de e-mails com Selenium"
 authors = ["lkaubs <kauanmessi@hotmail.com>"]
 readme = "README.md"
 packages = [{include = "verificador_processos", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+selenium = "^4.24.0"
+schedule = "^1.2.2"
+eel = "^0.17.0"
 
 
 [build-system]
